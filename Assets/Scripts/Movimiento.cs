@@ -29,10 +29,12 @@ public class Movimiento : MonoBehaviour
         if (mov2D > 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = false;
+            this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (-0.25f, -0.055f);
         }
         else if (mov2D < 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
+            this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (0.23f, -0.055f);
         }
         
         // SALTO
