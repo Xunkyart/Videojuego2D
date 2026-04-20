@@ -11,11 +11,14 @@ public class Movimiento : MonoBehaviour
 
     Rigidbody2D rb;
 
+    Animator animatorController;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       
+
+        animatorController = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,15 +29,23 @@ public class Movimiento : MonoBehaviour
         mov2D = InputSystem.actions["Move"].ReadValue<Vector2>().x;
         rb.linearVelocity = new Vector2 (mov2D*velocidadCorrer, rb.linearVelocity.y);
 
+        //Derecha
         if (mov2D > 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = false;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (-0.25f, -0.055f);
+            animatorController.SetBool("activaRun", true);
         }
+        //Izquierda
         else if (mov2D < 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (0.23f, -0.055f);
+            animatorController.SetBool("activaRun", true);
+        }
+        else
+        {
+            animatorController.SetBool("activaRun", false);
         }
         
         // SALTO
@@ -43,10 +54,12 @@ public class Movimiento : MonoBehaviour
         if (hit)
         {
             estoySaltando = false;
+            animatorController.SetBool("activaSalto", false);
         }
         else
         {
             estoySaltando = true;
+            animatorController.SetBool("activaSalto", true);
         }
 
 
