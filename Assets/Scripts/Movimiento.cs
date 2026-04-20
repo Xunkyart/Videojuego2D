@@ -13,12 +13,18 @@ public class Movimiento : MonoBehaviour
 
     Animator animatorController;
 
+    GameObject respawn;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
         animatorController = this.GetComponent<Animator>();
+
+        respawn = GameObject.Find("Respawn");
+
+        Respawnear();
     }
 
     // Update is called once per frame
@@ -68,12 +74,18 @@ public class Movimiento : MonoBehaviour
         {
            rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
         }
-        
 
-
-        //AddForceY(float force, ForceMode2D mode = ForceMode2D.Impulse);
-
-
-
+        if(transform.position.y <= -9)
+        {
+            Respawnear();
+        }
     }
+
+    public void Respawnear(){
+        transform.position = respawn.transform.position;
+        Debug.Log(GameManager.vidas);
+        GameManager.vidas = GameManager.vidas - 1;
+        
+    }
+
 }
