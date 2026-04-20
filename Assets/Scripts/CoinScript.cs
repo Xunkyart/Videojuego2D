@@ -4,6 +4,8 @@ public class CoinScript : MonoBehaviour
 {
     Animator coinAnimator;
 
+    public int valor =1 ;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,10 +15,17 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
         if(col.name == "Player")
         {
-            GameManager.dinero += 1;
-            Destroy(this.gameObject, 0f);
+            GameManager.dinero += valor;
+            coinAnimator.SetBool("CoinPicked",true);
+            Destroy(this.gameObject, 0.5f);
+            Debug.Log(GameManager.dinero);
         }
     }
 }

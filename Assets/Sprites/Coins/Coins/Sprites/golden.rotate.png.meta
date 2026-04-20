@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 33eaaffa49943744c88eae8d60734afd
+guid: 407488b181741a24bb8a090def3a2f6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2562472128753140933
-    second: silver.rotate_0
+      213: 2714850538533282923
+    second: golden.rotate_0
   - first:
-      213: 4510867587909270656
-    second: silver.rotate_1
+      213: -1323645554556269138
+    second: golden.rotate_1
   - first:
-      213: 6393882841977736860
-    second: silver.rotate_2
+      213: 299167792981935618
+    second: golden.rotate_2
   - first:
-      213: 110919287371499147
-    second: silver.rotate_3
+      213: 8121245594739981142
+    second: golden.rotate_3
   - first:
-      213: 5215748170970364164
-    second: silver.rotate_4
+      213: -7554643188025666943
+    second: golden.rotate_4
   - first:
-      213: -678512379552627376
-    second: silver.rotate_5
+      213: 7913886581936813713
+    second: golden.rotate_5
   - first:
-      213: 2952101869498897711
-    second: silver.rotate_6
+      213: -4692653191275509351
+    second: golden.rotate_6
   - first:
-      213: -7856275115095395205
-    second: silver.rotate_7
+      213: 6105437131335036494
+    second: golden.rotate_7
   - first:
-      213: 5369108221387035762
-    second: silver.rotate_8
+      213: 6914231901018147674
+    second: golden.rotate_8
   - first:
-      213: -2905927041945464936
-    second: silver.rotate_9
+      213: -4911131858439920637
+    second: golden.rotate_9
   - first:
-      213: 5220792323927214877
-    second: silver.rotate_10
+      213: 7607642778849637941
+    second: golden.rotate_10
   - first:
-      213: -3362053253219084334
-    second: silver.rotate_11
+      213: -5889527554019730631
+    second: golden.rotate_11
   - first:
-      213: -7757842379310875406
-    second: silver.rotate_12
+      213: -5758206815151447202
+    second: golden.rotate_12
   - first:
-      213: 4494991732735758983
-    second: silver.rotate_13
+      213: 8558996973280048498
+    second: golden.rotate_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,309 +152,309 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: silver.rotate_0
+      name: golden.rotate_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 4
-        width: 18
-        height: 24
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3b74daec25407cd0800000000000000
-      internalID: -2562472128753140933
+      spriteID: b64ed8f4e261da520800000000000000
+      internalID: 2714850538533282923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_1
+      name: golden.rotate_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 4
-        width: 17
-        height: 24
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08cb72eeb22d99e30800000000000000
-      internalID: 4510867587909270656
+      spriteID: ead0620916771ade0800000000000000
+      internalID: -1323645554556269138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_2
+      name: golden.rotate_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 4
-        width: 15
-        height: 24
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9e4c8b8192abb850800000000000000
-      internalID: 6393882841977736860
+      spriteID: 2060decc58bd62400800000000000000
+      internalID: 299167792981935618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_3
+      name: golden.rotate_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 4
-        width: 13
-        height: 24
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b86848211801a8100800000000000000
-      internalID: 110919287371499147
+      spriteID: 65bbe2817d574b070800000000000000
+      internalID: 8121245594739981142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_4
+      name: golden.rotate_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 4
-        width: 11
-        height: 24
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 409f498c35f026840800000000000000
-      internalID: 5215748170970364164
+      spriteID: 182d7e4fb04882790800000000000000
+      internalID: -7554643188025666943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_5
+      name: golden.rotate_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 4
-        width: 10
-        height: 24
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0558f01f5907596f0800000000000000
-      internalID: -678512379552627376
+      spriteID: 196f21daae5c3dd60800000000000000
+      internalID: 7913886581936813713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_6
+      name: golden.rotate_6
       rect:
         serializedVersion: 2
-        x: 204
-        y: 4
-        width: 8
-        height: 24
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f259f386209f7f820800000000000000
-      internalID: 2952101869498897711
+      spriteID: 9998be709c850eeb0800000000000000
+      internalID: -4692653191275509351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_7
+      name: golden.rotate_7
       rect:
         serializedVersion: 2
-        x: 237
-        y: 4
-        width: 6
-        height: 24
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b747ffa3867e8f290800000000000000
-      internalID: -7856275115095395205
+      spriteID: e4e64b319bedab450800000000000000
+      internalID: 6105437131335036494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_8
+      name: golden.rotate_8
       rect:
         serializedVersion: 2
-        x: 268
-        y: 4
-        width: 8
-        height: 24
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27457680b77e28a40800000000000000
-      internalID: 5369108221387035762
+      spriteID: a5b4cd2e74944ff50800000000000000
+      internalID: 6914231901018147674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_9
+      name: golden.rotate_9
       rect:
         serializedVersion: 2
-        x: 299
-        y: 4
-        width: 10
-        height: 24
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89f83a960c21ca7d0800000000000000
-      internalID: -2905927041945464936
+      spriteID: 304a594589728dbb0800000000000000
+      internalID: -4911131858439920637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_10
+      name: golden.rotate_10
       rect:
         serializedVersion: 2
-        x: 331
-        y: 4
-        width: 11
-        height: 24
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1b84c925faf37840800000000000000
-      internalID: 5220792323927214877
+      spriteID: 536f563ecc6c39960800000000000000
+      internalID: 7607642778849637941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_11
+      name: golden.rotate_11
       rect:
         serializedVersion: 2
-        x: 362
-        y: 4
-        width: 13
-        height: 24
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d71eed01669751d0800000000000000
-      internalID: -3362053253219084334
+      spriteID: 93b57c7c4e1344ea0800000000000000
+      internalID: -5889527554019730631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_12
+      name: golden.rotate_12
       rect:
         serializedVersion: 2
-        x: 393
-        y: 4
-        width: 15
-        height: 24
+        x: 384
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fc34b5757b965490800000000000000
-      internalID: -7757842379310875406
+      spriteID: e532aafe86db610b0800000000000000
+      internalID: -5758206815151447202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silver.rotate_13
+      name: golden.rotate_13
       rect:
         serializedVersion: 2
-        x: 424
-        y: 4
-        width: 17
-        height: 24
+        x: 416
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 782580a5a2b616e30800000000000000
-      internalID: 4494991732735758983
+      spriteID: 2753002566aa7c670800000000000000
+      internalID: 8558996973280048498
       vertices: []
       indices: 
       edges: []
@@ -463,7 +463,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 98096877dd9420f4aaf44bc086a49d1f
     internalID: 0
     vertices: []
     indices: 
@@ -471,22 +471,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      silver.rotate_0: -2562472128753140933
-      silver.rotate_1: 4510867587909270656
-      silver.rotate_10: 5220792323927214877
-      silver.rotate_11: -3362053253219084334
-      silver.rotate_12: -7757842379310875406
-      silver.rotate_13: 4494991732735758983
-      silver.rotate_2: 6393882841977736860
-      silver.rotate_3: 110919287371499147
-      silver.rotate_4: 5215748170970364164
-      silver.rotate_5: -678512379552627376
-      silver.rotate_6: 2952101869498897711
-      silver.rotate_7: -7856275115095395205
-      silver.rotate_8: 5369108221387035762
-      silver.rotate_9: -2905927041945464936
+      golden.rotate_0: 2714850538533282923
+      golden.rotate_1: -1323645554556269138
+      golden.rotate_10: 7607642778849637941
+      golden.rotate_11: -5889527554019730631
+      golden.rotate_12: -5758206815151447202
+      golden.rotate_13: 8558996973280048498
+      golden.rotate_2: 299167792981935618
+      golden.rotate_3: 8121245594739981142
+      golden.rotate_4: -7554643188025666943
+      golden.rotate_5: 7913886581936813713
+      golden.rotate_6: -4692653191275509351
+      golden.rotate_7: 6105437131335036494
+      golden.rotate_8: 6914231901018147674
+      golden.rotate_9: -4911131858439920637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
