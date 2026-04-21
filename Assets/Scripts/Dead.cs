@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class Dead : MonoBehaviour
+
 {
 
     GameObject player;

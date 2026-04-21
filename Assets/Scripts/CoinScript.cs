@@ -4,7 +4,7 @@ public class CoinScript : MonoBehaviour
 {
     Animator coinAnimator;
 
-    public int valor =1 ;
+    public int valor = 1 ;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,6 +18,7 @@ public class CoinScript : MonoBehaviour
        
     }
 
+    //MONEDAS
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.name == "Player")

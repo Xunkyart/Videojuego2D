@@ -15,6 +15,8 @@ public class Movimiento : MonoBehaviour
 
     GameObject respawn;
 
+    public bool direccionBalaDcha = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +43,7 @@ public class Movimiento : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = false;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (-0.25f, -0.055f);
             animatorController.SetBool("activaRun", true);
+            direccionBalaDcha = true;
         }
         //Izquierda
         else if (mov2D < 0)
@@ -48,6 +51,7 @@ public class Movimiento : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = true;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (0.23f, -0.055f);
             animatorController.SetBool("activaRun", true);
+            direccionBalaDcha = false;
         }
         else
         {
@@ -81,6 +85,7 @@ public class Movimiento : MonoBehaviour
         }
     }
 
+    //RESPAWN
     public void Respawnear(){
         transform.position = respawn.transform.position;
         Debug.Log(GameManager.vidas);
