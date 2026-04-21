@@ -18,6 +18,8 @@ public class CoinScript : MonoBehaviour
        
     }
 
+    //RECOGER MONEDAS
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.name == "Player")

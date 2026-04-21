@@ -20,6 +20,9 @@ public class Dead : MonoBehaviour
         
     }
 
+    //MUERTE
+    //Si el Player toca el collider de un objeto con este script, muere y respawnea
+
     void OnTriggerEnter2D (Collider2D col)
     {
        if(col.name == "Player")

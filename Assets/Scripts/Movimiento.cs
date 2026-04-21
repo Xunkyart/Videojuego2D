@@ -15,6 +15,8 @@ public class Movimiento : MonoBehaviour
 
     GameObject respawn;
 
+    public bool direccionFuegoDcha = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +43,7 @@ public class Movimiento : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = false;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (-0.25f, -0.055f);
             animatorController.SetBool("activaRun", true);
+            direccionFuegoDcha = true;
         }
         //Izquierda
         else if (mov2D < 0)
@@ -48,13 +51,17 @@ public class Movimiento : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = true;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2 (0.23f, -0.055f);
             animatorController.SetBool("activaRun", true);
+            direccionFuegoDcha = false;
         }
+        //Quieto
         else
         {
             animatorController.SetBool("activaRun", false);
         }
         
         // SALTO
+
+        //Compruebo si puedo saltar
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.49f);
 
         if (hit)
@@ -68,12 +75,14 @@ public class Movimiento : MonoBehaviour
             animatorController.SetBool("activaSalto", true);
         }
 
-
+        //Input de salto, activa y define el salto
 
         if (InputSystem.actions["Jump"].ReadValue<float>() == 1.0f && estoySaltando == false)
         {
            rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
         }
+
+        //RESPAWN TRAS CAIDA
 
         if(transform.position.y <= -9)
         {
@@ -81,6 +90,7 @@ public class Movimiento : MonoBehaviour
         }
     }
 
+    //MÉTODO PARA RESPAWNEAR
     public void Respawnear(){
         transform.position = respawn.transform.position;
         Debug.Log(GameManager.vidas);
