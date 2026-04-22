@@ -1,7 +1,7 @@
-using UnityEngine;
-using System;
-using NUnit.Framework;
-using Unity.VisualScripting;
+    using System;
+    using NUnit.Framework;
+    using Unity.VisualScripting;
+    using UnityEngine;
 
 public class Fantasma : MonoBehaviour
 {   string estado = "patrulla";
@@ -41,7 +41,6 @@ public class Fantasma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(estado);
         //PATRULLA
         if(estado == "patrulla")
         {
@@ -94,19 +93,28 @@ public class Fantasma : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, Personaje.transform.position, velocidadAtaque * Time.deltaTime);
         }
    }
+
+    // EL FANTASMA MATA POR CONTACTO
+
    void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name == "Player")
+        Debug.Log("Triggered with: " + col.name);
+        if(col.name == "Player")
         {
-            GameManager.vidas -=1;
             Personaje.GetComponent<Movimiento>().Respawnear();
+            Debug.Log("mori");
+        }
+        else if (col.name == "Fuego")
+        {
+            Debug.Log("pupa");
+            Destroy(col.gameObject, 0.5f);
+            Destroy(this.gameObject, 0.5f);
         }
 
-        if(col.gameObject.name == "Fuego")
-        {
-            Destroy(col.gameObject, 0.5f);
-            Destroy(this.gameObject,0.5f);
-        }
+        //EL FANTASMA MUERE POR FUEGO
+
+        
     }
+   
 
 }
