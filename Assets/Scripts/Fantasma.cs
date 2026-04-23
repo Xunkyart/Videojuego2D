@@ -98,15 +98,12 @@ public class Fantasma : MonoBehaviour
 
    void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Triggered with: " + col.name);
         if(col.name == "Player")
         {
             Personaje.GetComponent<Movimiento>().Respawnear();
-            Debug.Log("mori");
         }
         else if (col.name == "Fuego")
         {
-            Debug.Log("pupa");
             Destroy(col.gameObject, 0.0f);
             Destroy(this.gameObject, 0.0f);
         }

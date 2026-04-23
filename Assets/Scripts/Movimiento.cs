@@ -93,9 +93,8 @@ public class Movimiento : MonoBehaviour
     //MÉTODO PARA RESPAWNEAR
     public void Respawnear(){
         transform.position = respawn.transform.position;
-        Debug.Log(GameManager.vidas);
-        GameManager.vidas = GameManager.vidas - 1;
         
+        GameManager.vidas = GameManager.vidas - 1;
     }
 
 }

@@ -13,13 +13,6 @@ public class CoinScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
-    //RECOGER MONEDAS
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.name == "Player")
@@ -30,4 +23,5 @@ public class CoinScript : MonoBehaviour
             Debug.Log(GameManager.dinero);
         }
     }
+    
 }
