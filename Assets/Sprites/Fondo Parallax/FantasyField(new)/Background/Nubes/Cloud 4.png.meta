@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 5b04c16c9c362ad41a005170db55c25d
+guid: 29d42e730ebc10e4db4faf515eabd4f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3028996130159385344
-    second: FantasyField-BgLayer4_0
-  - first:
-      213: -8638643460759524681
-    second: FantasyField-BgLayer4_1
-  - first:
-      213: 6920669797016379852
-    second: FantasyField-BgLayer4_2
+      213: -330946664044184760
+    second: Cloud 4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FantasyField-BgLayer4_0
+      name: Cloud 4_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 61
-        width: 245
-        height: 121
+        x: 0
+        y: 0
+        width: 88
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00521d36118d6f5d0800000000000000
-      internalID: -3028996130159385344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FantasyField-BgLayer4_1
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 125
-        width: 133
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ba6d2cba8f5d1880800000000000000
-      internalID: -8638643460759524681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FantasyField-BgLayer4_2
-      rect:
-        serializedVersion: 2
-        x: 409
-        y: 63
-        width: 225
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc1afea53882b0060800000000000000
-      internalID: 6920669797016379852
+      spriteID: 84bbb0233cd386bf0800000000000000
+      internalID: -330946664044184760
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FantasyField-BgLayer4_0: -3028996130159385344
-      FantasyField-BgLayer4_1: -8638643460759524681
-      FantasyField-BgLayer4_2: 6920669797016379852
+      Cloud 4_0: -330946664044184760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

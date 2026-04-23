@@ -107,9 +107,10 @@ public class Fantasma : MonoBehaviour
         else if (col.name == "Fuego")
         {
             Debug.Log("pupa");
-            Destroy(col.gameObject, 0.5f);
-            Destroy(this.gameObject, 0.5f);
+            Destroy(col.gameObject, 0.0f);
+            Destroy(this.gameObject, 0.0f);
         }
+        
 
         //EL FANTASMA MUERE POR FUEGO
 

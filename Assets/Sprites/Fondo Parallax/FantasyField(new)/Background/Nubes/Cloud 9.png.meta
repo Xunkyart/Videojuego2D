@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 046e2b9a20db7664a9a78c6c367423ba
+guid: 6620b0ed21f789a45a060a0718e110cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1925682228326010490
-    second: FantasyField-BgStatic_0
+      213: -3724938168950280541
+    second: Cloud 9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FantasyField-BgStatic_0
+      name: Cloud 9_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 640
-        height: 256
+        width: 149
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 681785e473a9645e0800000000000000
-      internalID: -1925682228326010490
+      spriteID: 3aeac6d887c5e4cc0800000000000000
+      internalID: -3724938168950280541
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FantasyField-BgStatic_0: -1925682228326010490
+      Cloud 9_0: -3724938168950280541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
