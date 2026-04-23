@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameManager.vidas);
+        //Debug.Log(GameManager.vidas);
         if (vidas <= 0){
            Player.GetComponent<Movimiento>().Respawnear();
             vidas = 6;

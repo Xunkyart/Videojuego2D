@@ -17,6 +17,10 @@ public class Movimiento : MonoBehaviour
 
     public bool direccionFuegoDcha = true;
 
+    public bool saltoDoble;
+
+    GameObject orbeSalto;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +31,10 @@ public class Movimiento : MonoBehaviour
         respawn = GameObject.Find("Respawn");
 
         Respawnear();
+
+        saltoDoble = false;
+
+        orbeSalto = GameObject.Find("SaltoDobleObj");
     }
 
     // Update is called once per frame
@@ -64,11 +72,14 @@ public class Movimiento : MonoBehaviour
         //Compruebo si puedo saltar
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.49f);
 
-        if (hit)
+        saltoDoble = orbeSalto.GetComponent<SaltoDobleScript>().permiteSaltoDoble;
+
+        if ((hit && hit.collider.name == "Ground") || saltoDoble == true)
         {
             estoySaltando = false;
             animatorController.SetBool("activaSalto", false);
         }
+        
         else
         {
             estoySaltando = true;
@@ -84,7 +95,7 @@ public class Movimiento : MonoBehaviour
 
         //RESPAWN TRAS CAIDA
 
-        if(transform.position.y <= -9)
+        if(transform.position.y <= -20)
         {
             Respawnear();
         }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Fuego
+  - Plataforma
   layers:
   - Default
   - TransparentFX
