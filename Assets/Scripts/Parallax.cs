@@ -19,8 +19,14 @@ public class Parallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // PARALLAX
+        //Script que sirve para todas las capas, se personalizan individualmente con el float público
+
        float posicionX = Camara.transform.position.x ;
+
        float posicionY = Camara.transform.position.y ;
+
         transform.position = new UnityEngine.Vector3(posicionX*velocidadParallax, transform.position.y , 0.5f);
     }
 }
