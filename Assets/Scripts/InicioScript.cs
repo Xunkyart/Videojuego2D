@@ -24,7 +24,7 @@ public class InicioScript : MonoBehaviour
         SceneManager.LoadScene("Level_Prototype");
     }
 
-    bOTÓN SETTINGS
+    //BOTÓN SETTINGS
 
     public void showSettings()
     {
