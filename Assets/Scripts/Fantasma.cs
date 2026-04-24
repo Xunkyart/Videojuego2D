@@ -88,11 +88,16 @@ public class Fantasma : MonoBehaviour
         }   
         //ATAQUE
 
-        if (estado == "ataque")
+            if (estado == "ataque")
         {
-            transform.position = Vector3.MoveTowards(transform.position, Personaje.transform.position, velocidadAtaque * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                Personaje.transform.position,
+                velocidadAtaque * Time.deltaTime
+            );
         }
-   }
+
+    }
 
     // EL FANTASMA MATA POR CONTACTO
 

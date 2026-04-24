@@ -97,6 +97,7 @@ public class Movimiento : MonoBehaviour
 
         if(transform.position.y <= -20)
         {
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMuerte);
             Respawnear();
         }
     }

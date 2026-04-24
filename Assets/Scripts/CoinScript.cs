@@ -17,6 +17,7 @@ public class CoinScript : MonoBehaviour
     {
         if(col.name == "Player")
         {
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMonedas);
             GameManager.dinero += valor;
             coinAnimator.SetBool("CoinPicked",true);
             Destroy(this.gameObject, 0.5f);
