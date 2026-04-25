@@ -7,7 +7,7 @@ public class Movimiento : MonoBehaviour
 
     public float impulsoSalto = 5f;
 
-    bool estoySaltando = false;
+    public  bool estoySaltando = false;
 
     Rigidbody2D rb;
 
@@ -17,9 +17,6 @@ public class Movimiento : MonoBehaviour
 
     public bool direccionFuegoDcha = true;
 
-    public bool saltoDoble;
-
-    GameObject orbeSalto;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,10 +28,7 @@ public class Movimiento : MonoBehaviour
         respawn = GameObject.Find("Respawn");
 
         Respawnear();
-
-        saltoDoble = false;
-
-        orbeSalto = GameObject.Find("SaltoDobleObj");
+        
     }
 
     // Update is called once per frame
@@ -72,9 +66,8 @@ public class Movimiento : MonoBehaviour
         //Compruebo si puedo saltar
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.49f);
 
-        saltoDoble = orbeSalto.GetComponent<SaltoDobleScript>().permiteSaltoDoble;
 
-        if ((hit && hit.collider.name == "Ground") || saltoDoble == true)
+        if (hit && hit.collider.name == "Ground")
         {
             estoySaltando = false;
             animatorController.SetBool("activaSalto", false);
@@ -88,10 +81,12 @@ public class Movimiento : MonoBehaviour
 
         //Input de salto, activa y define el salto
 
-        if (InputSystem.actions["Jump"].ReadValue<float>() == 1.0f && estoySaltando == false)
+
+        if (InputSystem.actions["Jump"].WasPressedThisFrame() && !estoySaltando)
         {
-           rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
+            Jump();
         }
+       
 
         //RESPAWN TRAS CAIDA
 
@@ -100,6 +95,16 @@ public class Movimiento : MonoBehaviour
             AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMuerte);
             Respawnear();
         }
+    }
+
+    void Jump()
+    {
+        rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
+    }
+
+    public void DoubleJump()
+    {
+        rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
     }
 
     //MÉTODO PARA RESPAWNEAR

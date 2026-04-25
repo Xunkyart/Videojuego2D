@@ -4,7 +4,7 @@ using System.Collections;
 
 public class SaltoDobleScript : MonoBehaviour
 {
-    GameObject Player;
+    /*GameObject Player;
 
     public bool permiteSaltoDoble;
 
@@ -67,5 +67,5 @@ public class SaltoDobleScript : MonoBehaviour
 
     void OnTriggerExit2D(){
         permiteSaltoDoble = false;
-    }
+    }*/
 }
