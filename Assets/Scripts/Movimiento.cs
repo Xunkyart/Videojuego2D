@@ -90,7 +90,7 @@ public class Movimiento : MonoBehaviour
 
         //RESPAWN TRAS CAIDA
 
-        if(transform.position.y <= -20)
+        if(transform.position.y <= -15)
         {
             AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMuerte);
             Respawnear();

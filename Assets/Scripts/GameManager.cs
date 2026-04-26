@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static public int vidas = 6;
+    static public int vidas = 7;
 
     static public int dinero = 0;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log(GameManager.vidas);
         if (vidas <= 0){
            Player.GetComponent<Movimiento>().Respawnear();
-            vidas = 6;
+            vidas = 7;
         }
 
         if (vidas > 6)

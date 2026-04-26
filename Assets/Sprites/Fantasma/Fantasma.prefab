@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fantasma
   distanciaPatrulla: 3
-  velocidadPatrulla: 5
-  velocidadAtaque: 1
-  distanciaEvitar: 3
-  distanciaAtaque: 3
+  velocidadPatrulla: 2
+  velocidadAtaque: 3
+  distanciaEvitar: 10
+  distanciaAtaque: 7
 --- !u!70 &4823288690395654212
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
