@@ -57,6 +57,7 @@ public class DobleSalto : MonoBehaviour
     }
 //Corrutina, temporizador de la recarga del orbe tras usarlo
     private IEnumerator IniciarTemporizador(){
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipOrbe);
         yield return new WaitForSeconds(3.0f);
         recargando = false;
         SaltoDobleAnimator.SetBool("Gastado",false);

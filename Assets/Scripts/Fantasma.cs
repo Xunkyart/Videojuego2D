@@ -24,6 +24,8 @@ public class Fantasma : MonoBehaviour
 
     Vector3 posicionLimitIzq, posicionLimitDrcha;
 
+    Animator fantasmaAnimator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +38,7 @@ public class Fantasma : MonoBehaviour
         posicionLimitDrcha = new Vector3(posicionInicial.x + distanciaPatrulla, posicionInicial.y, posicionInicial.z);
 
         estado = "patrulla";
+        fantasmaAnimator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -99,7 +102,7 @@ public class Fantasma : MonoBehaviour
 
     }
 
-    // EL FANTASMA MATA POR CONTACTO
+    // EL FANTASMA MATA POR CONTACTO Y MUERE POR FUEGO
 
    void OnTriggerEnter2D(Collider2D col)
     {
@@ -109,13 +112,10 @@ public class Fantasma : MonoBehaviour
         }
         else if (col.name == "Fuego")
         {
+            fantasmaAnimator.SetBool("Muerte",true);
             Destroy(col.gameObject, 0.0f);
-            Destroy(this.gameObject, 0.0f);
+            Destroy(this.gameObject, 0.5f);
         }
-        
-
-        //EL FANTASMA MUERE POR FUEGO
-
         
     }
    

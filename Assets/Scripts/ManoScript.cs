@@ -10,6 +10,7 @@ public class ScriptUIVictoria : MonoBehaviour
     GameObject manoSprite;
     GameObject fantasmas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //eL PANEL DE VICTORIA EMPIEZA APAGADO
     void Start()
     {
         panelVictoria.SetActive(false);
@@ -18,6 +19,8 @@ public class ScriptUIVictoria : MonoBehaviour
         manoSprite = GameObject.Find("ManoSprite");
         fantasmas = GameObject.Find("==PELIGRO==");
     }
+
+    //SI ENTRAS EN EL COLLIDER TRIGGER, SE ACTIVA UNA ANIMACIÓN Y UN TEMPORIZADOR
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -28,10 +31,13 @@ public class ScriptUIVictoria : MonoBehaviour
             StartCoroutine(IniciarTemporizador());
         }
     }
+
+    //TRAS ACBAR LA ANIAMCIÓN, EL PERSONAJE SE DESTRUYE Y APARECE EL PANEL DE VICTORIA
+    //Destruyo los fantasmas también porque al necesiatr en todo momento la posición del personaje, sacan un error si destruyo al personaje
     IEnumerator IniciarTemporizador(){
         yield return new WaitForSeconds(1.1f);
-        Destroy(fantasmas);
-        Destroy(player);
+        player.SetActive(false);
+        fantasmas.SetActive(false);
         yield return new WaitForSeconds(1.2f);
         panelUI.SetActive(false);
         panelVictoria.SetActive(true);
@@ -39,6 +45,8 @@ public class ScriptUIVictoria : MonoBehaviour
 
      public void VovlerInicio()
     {
+        player.SetActive(true);
+        fantasmas.SetActive(true);
         SceneManager.LoadScene("Inicio");
     }
 }

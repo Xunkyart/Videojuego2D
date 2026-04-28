@@ -92,23 +92,26 @@ public class Movimiento : MonoBehaviour
 
         if(transform.position.y <= -15)
         {
-            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMuerte);
             Respawnear();
         }
     }
 
     void Jump()
     {
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipSalto);
         rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
     }
 
     public void DoubleJump()
     {
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipSalto);
         rb.linearVelocity = new Vector2 (rb.linearVelocity.x, impulsoSalto);
     }
 
     //MÉTODO PARA RESPAWNEAR
     public void Respawnear(){
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMuerte);
+
         transform.position = respawn.transform.position;
         
         GameManager.vidas = GameManager.vidas - 1;

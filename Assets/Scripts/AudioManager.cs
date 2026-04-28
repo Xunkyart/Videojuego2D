@@ -7,6 +7,9 @@ public class AudioManager : MonoBehaviour
    public AudioClip clipMonedas;
    public AudioClip clipMuerte;
    public AudioClip clipFuego;
+   public AudioClip clipOrbe;
+   public AudioClip clipMojito;
+   public AudioClip clipSalto;
    public static AudioManager Instance;
 
     void Awake()

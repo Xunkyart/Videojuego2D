@@ -18,6 +18,7 @@ public class MojitoScript : MonoBehaviour
         {
         if(col.name == "Player")
             {
+                AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.clipMojito);
                 GameManager.vidas += curacion;
                 Destroy(this.gameObject);
             }

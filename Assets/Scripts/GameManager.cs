@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        vidas = 7;
+        dinero = 0;
+
         Player = GameObject.Find("Player");
 
         dineroObj = GameObject.Find("DineroObj");
