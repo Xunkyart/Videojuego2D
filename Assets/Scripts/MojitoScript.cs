@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MojitoScript : MonoBehaviour
 {
-    public int curacion = 1;
+    public int curacion = 2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

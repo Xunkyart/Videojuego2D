@@ -264,6 +264,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 777510276015801717, guid: 8390fe6076d1e1b4a95aaa3af847e5ca, type: 3}
+      propertyPath: clipOrbe
+      value: 
+      objectReference: {fileID: 8300000, guid: db60993b81ccb7143800d23bb223bd52, type: 3}
+    - target: {fileID: 777510276015801717, guid: 8390fe6076d1e1b4a95aaa3af847e5ca, type: 3}
+      propertyPath: clipSalto
+      value: 
+      objectReference: {fileID: 8300000, guid: 23aa570edd2685047826ec786f9491c2, type: 3}
+    - target: {fileID: 777510276015801717, guid: 8390fe6076d1e1b4a95aaa3af847e5ca, type: 3}
+      propertyPath: clipMojito
+      value: 
+      objectReference: {fileID: 8300000, guid: 84d477d37d404e040a7cef4ce068f748, type: 3}
     - target: {fileID: 3228850499731376528, guid: 8390fe6076d1e1b4a95aaa3af847e5ca, type: 3}
       propertyPath: m_Name
       value: AudioManagerObj

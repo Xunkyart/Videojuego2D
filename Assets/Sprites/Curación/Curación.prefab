@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e965c0aca865cfb499fe19dfc78d106e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MojitoScript
-  curacion: 1
+  curacion: 2
