@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     GameObject Player;
 
     GameObject dineroObj;
+    public GameObject panelDerrota;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
         Player = GameObject.Find("Player");
 
         dineroObj = GameObject.Find("DineroObj");
+        panelDerrota.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,8 +27,7 @@ public class GameManager : MonoBehaviour
     {
         // VIDA Y RESPAWN
         if (vidas <= 0){
-           Player.GetComponent<Movimiento>().Respawnear();
-            vidas = 7;
+           panelDerrota.SetActive(true);
         }
 
         if (vidas > 6)
@@ -37,4 +39,11 @@ public class GameManager : MonoBehaviour
         dineroObj.GetComponent<TextMeshProUGUI>().text = dinero.ToString();
     }
 
+   
+    public void VovlerInicio()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
 }
+
+

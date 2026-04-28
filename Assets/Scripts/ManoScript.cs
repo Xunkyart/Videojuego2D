@@ -5,7 +5,6 @@ using System.Collections;
 public class ScriptUIVictoria : MonoBehaviour
 {
     public GameObject panelVictoria;
-    public GameObject panelDerrota;
     public GameObject panelUI;
     GameObject player;
     GameObject manoSprite;
@@ -14,16 +13,10 @@ public class ScriptUIVictoria : MonoBehaviour
     void Start()
     {
         panelVictoria.SetActive(false);
-        panelDerrota.SetActive(false);
+        
         player = GameObject.FindWithTag("Player");
         manoSprite = GameObject.Find("ManoSprite");
         fantasmas = GameObject.Find("==PELIGRO==");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnTriggerEnter2D(Collider2D col)
