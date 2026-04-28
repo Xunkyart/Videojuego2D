@@ -4,7 +4,7 @@ public class CoinScript : MonoBehaviour
 {
     Animator coinAnimator;
 
-    public int valor =1 ;
+    public int valor = 2 ;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +21,6 @@ public class CoinScript : MonoBehaviour
             GameManager.dinero += valor;
             coinAnimator.SetBool("CoinPicked",true);
             Destroy(this.gameObject, 0.5f);
-            Debug.Log(GameManager.dinero);
         }
     }
     

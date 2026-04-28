@@ -22,12 +22,12 @@ public class DobleSalto : MonoBehaviour
         SaltoDobleAnimator = this.GetComponent<Animator>();
     }
 
-
+//Se llama al método del script del Player que ejecuta el doble salto.
     private void DoubleJump()
     {
         Player.GetComponent<Movimiento>().DoubleJump();
     }
-
+//Detecta si el Player está dentro del orbe para activar la posibilidad de ejecutar el doble salto.
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.name == "Player")
@@ -35,7 +35,7 @@ public class DobleSalto : MonoBehaviour
             estoyEnOrbe = true;
         }
     }
-
+//Detecta si el Player sale del orbe para desactivar la posibilidad de ejecutar el doble salto.
     private void OnTriggerExit2D(Collider2D col)
     {
         if (col.name == "Player")
@@ -43,7 +43,8 @@ public class DobleSalto : MonoBehaviour
             estoyEnOrbe = false;
         }
     }
-
+//Si el player pulsa el botón de slato, está dentro de el orbe y el orbe no está recargando, ejectuta el método de salto
+//Si se ejecuta el salto, se inicia la recarga del orbe
     private void Update()
     {
         if (InputSystem.actions["Jump"].WasPressedThisFrame() && estoyEnOrbe && !recargando)
@@ -54,12 +55,11 @@ public class DobleSalto : MonoBehaviour
             StartCoroutine(IniciarTemporizador());
         }
     }
-
+//Corrutina, temporizador de la recarga del orbe tras usarlo
     private IEnumerator IniciarTemporizador(){
         yield return new WaitForSeconds(3.0f);
         recargando = false;
         SaltoDobleAnimator.SetBool("Gastado",false);
-    
     }
 
 
