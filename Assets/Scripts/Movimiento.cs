@@ -13,9 +13,9 @@ public class Movimiento : MonoBehaviour
 
     Animator animatorController;
 
-    GameObject respawn;
-
     public bool direccionFuegoDcha = true;
+
+    public static GameObject respawn;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -112,6 +112,14 @@ public class Movimiento : MonoBehaviour
         transform.position = respawn.transform.position;
         
         GameManager.vidas = GameManager.vidas - 1;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Checkpoint"))
+      {
+        respawn.transform.position = col.gameObject.transform.position;
+      }
     }
 
 }

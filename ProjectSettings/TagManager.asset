@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fuego
   - Plataforma
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
